@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386F282885685D2531794FE4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4A8F64A4A2CD91F44BDB1F /* libPods.a */; };
 		B597F39C1AB5278F009F3E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597F39B1AB5278F009F3E9B /* AppDelegate.swift */; };
 		B597F39E1AB5278F009F3E9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597F39D1AB5278F009F3E9B /* ViewController.swift */; };
 		B597F3A11AB5278F009F3E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B597F39F1AB5278F009F3E9B /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2848492341578217EFD8AE58 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B597F3961AB5278F009F3E9B /* Jade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B597F39A1AB5278F009F3E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B597F39B1AB5278F009F3E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		B597F3AB1AB5278F009F3E9B /* JadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JadeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B597F3B01AB5278F009F3E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B597F3B11AB5278F009F3E9B /* JadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JadeTests.swift; sourceTree = "<group>"; };
+		CD4A8F64A4A2CD91F44BDB1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED134A9EB6B0C961D10ECEF4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386F282885685D2531794FE4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3C4FE27425A1ED068F11F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2848492341578217EFD8AE58 /* Pods.debug.xcconfig */,
+				ED134A9EB6B0C961D10ECEF4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B597F38D1AB5278F009F3E9B = {
 			isa = PBXGroup;
 			children = (
 				B597F3981AB5278F009F3E9B /* Jade */,
 				B597F3AE1AB5278F009F3E9B /* JadeTests */,
 				B597F3971AB5278F009F3E9B /* Products */,
+				3A3C4FE27425A1ED068F11F7 /* Pods */,
+				C3B971F9208E1C70ABCBF87A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +128,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C3B971F9208E1C70ABCBF87A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A8F64A4A2CD91F44BDB1F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B597F3B51AB5278F009F3E9B /* Build configuration list for PBXNativeTarget "Jade" */;
 			buildPhases = (
+				19C1E49ACD05B19BC91E3A1D /* Check Pods Manifest.lock */,
 				B597F3921AB5278F009F3E9B /* Sources */,
 				B597F3931AB5278F009F3E9B /* Frameworks */,
 				B597F3941AB5278F009F3E9B /* Resources */,
+				A9DD99FA525F89346356595D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +233,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19C1E49ACD05B19BC91E3A1D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DD99FA525F89346356595D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B597F3921AB5278F009F3E9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -291,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -338,9 +397,11 @@
 		};
 		B597F3B61AB5278F009F3E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2848492341578217EFD8AE58 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,9 +409,11 @@
 		};
 		B597F3B71AB5278F009F3E9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED134A9EB6B0C961D10ECEF4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +472,7 @@
 				B597F3B71AB5278F009F3E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B597F3B81AB5278F009F3E9B /* Build configuration list for PBXNativeTarget "JadeTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +481,7 @@
 				B597F3BA1AB5278F009F3E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
